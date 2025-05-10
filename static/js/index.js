@@ -21,7 +21,7 @@ $(document).ready(function() {
 })
 
 
-$(document).querySelectorAll('.slider-container').forEach(container => {
+document.querySelectorAll('.slider-container').forEach(container => {
 	const bottomVideo = container.querySelector('.bottom-video');
 	const topVideo = container.querySelector('.top-video');
 	const slider = container.querySelector('.slider');
