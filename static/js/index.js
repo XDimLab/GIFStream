@@ -20,7 +20,7 @@ $(document).ready(function() {
 
 })
 
-
+document.addEventListener('DOMContentLoaded', function() {
 document.querySelectorAll('.slider-container').forEach(container => {
 	const bottomVideo = container.querySelector('.bottom-video');
 	const topVideo = container.querySelector('.top-video');
@@ -106,3 +106,4 @@ document.querySelectorAll('.slider-container').forEach(container => {
 	// 初始化滑块位置
 	updateClipPath(container.getBoundingClientRect().left + container.getBoundingClientRect().width / 2);
   });
+});
