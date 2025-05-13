@@ -66,7 +66,7 @@
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="#" target="_blank"
+                    <a href="https://github.com/XDimLab/GIFStream" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -77,7 +77,7 @@
 
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  <a href="https://arxiv.org/abs/2505.07539" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
@@ -137,6 +137,11 @@
             <strong>(II. Compression)</strong> For compression, we reorganize both time-dependent and time-independent parameters into two videos. The feature streams are first pruned and then compressed in an auto-regressive manner, effectively leveraging the temporal correspondence information. During training, we jointly optimize the rendering loss \(L_{photo}\) and add an entropy constraint \(L_{entropy}\).
         </p>
       </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div style="width: 75%; height: auto; margin: 0 auto;">
 
       <div class="columns is-centered has-text-centered">
         <h2 class="title is-3">Results</h2>
@@ -171,6 +176,10 @@
         </div>
       </div>
 
+      <div class="columns is-centered has-text-centered">
+        <p class="is-size-5">RD-Curve in the MPEG dataset</p>
+      </div>
+
       <div class="results-grid">
         <div class="result-column">
             <img src="asset/RD-PSNR_log.png">
@@ -181,7 +190,6 @@
         <div class="result-column">
             <img src="asset/RD-LPIPS_log.png">
         </div>
-    </div>
 
   </div>
 </section>
@@ -191,7 +199,15 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@misc{li2025gifstream4dgaussianbasedimmersive,
+    title={GIFStream: 4D Gaussian-based Immersive Video with Feature Stream}, 
+    author={Hao Li and Sicheng Li and Xiang Gao and Abudouaihati Batuer and Lu Yu and Yiyi Liao},
+    year={2025},
+    eprint={2505.07539},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV},
+    url={https://arxiv.org/abs/2505.07539}, 
+}</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
