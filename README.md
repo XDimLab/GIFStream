@@ -64,6 +64,25 @@ Then preprocess the data using the script as below.
 python dataset_process/n3d_video_process.py --root_dir your_path_to_neur3d_dataset
 ```
 
+For readers who are accessible to MPEG GSC dataset, please first download the dataset and the organization of files should be like this:
+```md
+
+└── mpeg/
+    ├── Bartender/
+    │   ├── yuv
+    │   │   └── vxx_framexxx.yuv
+    │   │   └── ...
+    ├── Cinema/
+    │   ├── yuv
+    │   │   └── vxx_framexxx.yuv
+    │   │   └── ...
+    └── ...
+```
+Then preprocess the data using the script as below. It will transform yuv files into png files and conduct colmap for the first frame setted in gsc_tool/scene_info.py. Note that this is not the process conducted in the article and performance is not perfectly matched, since our code has been reimplemented.
+
+```bash
+bash gsc_tool/preprocess.sh
+```
 ### GIFStream Training and Compression
 
 We provide a script that enables end-to-end compression-aware training and compression for videos containing several gops.

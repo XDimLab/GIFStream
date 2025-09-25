@@ -1730,6 +1730,18 @@ if __name__ == "__main__":
                 app_opt=False,
             ),
         ),
+        "GSC": (
+            "mpeg dataset",
+            Config(
+                strategy=GIFStreamStrategy(verbose=True,densify_grad_threshold=0.0002,deformation_gate=0.03),
+                test_set=[8,10,12],
+                normalize_world_space=False,
+                anchor_feature_dim=24,
+                c_perframe = 8,
+                app_opt=False,
+                batch_size=4,
+            ),
+        ),
         "default": (
             "GIFStream with compression.",
             Config(
