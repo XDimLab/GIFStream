@@ -78,7 +78,7 @@ For readers who are accessible to MPEG GSC dataset, please first download the da
     │   │   └── ...
     └── ...
 ```
-Then preprocess the data using the script as below. It will transform yuv files into png files and conduct colmap for the first frame setted in gsc_tool/scene_info.py. Note that this is not the process conducted in the article and performance is not perfectly matched, since our code has been reimplemented.
+Then edit gsc_tool/preprocess.sh for specific dataset and preprocess the data using this script as below. It will transform yuv files into png files and conduct colmap for the first frame setted in gsc_tool/scene_info.py. Note that this is not the process conducted in the article and performance is not perfectly matched, since our code has been reimplemented.
 
 ```bash
 bash gsc_tool/preprocess.sh
